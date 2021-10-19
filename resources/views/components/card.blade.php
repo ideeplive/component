@@ -1,5 +1,7 @@
 <div>
-    <h2>The Card Title</h2>
-    <h4>The Card SubTitle</h4>
-    <p>Description is Here</p>
+    <h2>{{ $title }}</h2>
+    <h4>{{ $subTitle }}</h4>
+    <p>{{ $description }} {{$addNumber(50)}}</p>
 </div>
+<hr>
+<hr>

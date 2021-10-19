@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class card extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $title;
+    public $subTitle;
+    public $description;
+    
+    public function __construct($title, $subTitle, $description)
     {
-        //
+        $this->title = $title;
+        $this->subTitle = $subTitle;
+        $this->description = $description;
     }
 
     /**
@@ -24,5 +25,8 @@ class card extends Component
     public function render()
     {
         return view('components.card');
+    }
+    public function addNumber($a){
+        return $a/2;
     }
 }
